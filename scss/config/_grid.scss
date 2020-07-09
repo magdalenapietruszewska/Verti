@@ -1,0 +1,65 @@
+@mixin grid($colsNumber) {
+    @for $i from 1 through $colsNumber {
+        .col-#{$i} {
+            flex: 0 0 (100% / $colsNumber) * $i;
+        }
+    }
+
+    @include desktop {
+        @for $i from 1 through $colsNumber {
+            .col-md-#{$i} {
+                flex: 0 0 (100% / $colsNumber) * $i;
+            }
+        }
+    }
+    @include tablet {
+        @for $i from 1 through $colsNumber {
+            .col-sm-#{$i} {
+                flex: 0 0 (100% / $colsNumber) * $i;
+            }
+        }
+    }
+}
+
+%clearfix {
+    &:after, &:before {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+.container {
+    .row {
+        @extend %clearfix;
+        margin: 0 -1*$main-padding;
+        margin-bottom: $main-padding;
+        flex-wrap: wrap;
+
+        [class*='col-'] {
+            padding: 0 $main-padding;
+            flex: 0 0 100%;
+        }
+
+        display: flex;
+        @include grid(12);
+
+        .order-mobile-0 {
+            order: 1;
+        }
+
+        .order-mobile-1 {
+            order: 0;
+        }
+
+        @include desktop {
+            .order-mobile-0 {
+                order: 0;
+            }
+
+            .order-mobile-1 {
+                order: 1;
+            }
+        }
+    }
+}

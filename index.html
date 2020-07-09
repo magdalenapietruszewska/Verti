@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sass - Zadania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Open+Sans:300,400,600,700,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+<div id="navPanel" class="hidden box">
+    <ul>
+      <li>
+        <a href="#">Welcome</a>
+      </li>
+      <li>
+        <a href="#">Dropdown</a>
+        <ul>
+          <li>
+            <a class="list" href="#">Lorem ipsum dolor</a>
+          </li>
+          <li>
+            <a class="list" href="#">Magne phasellu</a>
+          </li>
+          <li>
+            <a class="list" href="#">Phale constjuat</a>
+            <ul>
+              <li>
+                <a class="list smallList" href="#">Lorem ipsum dolor</a>
+              </li>
+              <li>
+                <a class="list smallList" href="#">Phale constjuat</a>
+              </li>
+              <li>
+                <a class="list smallList" href="#">Magne phasellu</a>
+              </li>
+              <li>
+                <a class="list smallList" href="#">Etiam dolore nisi</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list" href="#">Veroero fuegiat</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Left Sidebar</a>
+      </li>
+      <li>
+        <a href="#">Right Sidebar</a>
+      </li>
+      <li>
+        <a href="#">No Sidebar</a>
+      </li>
+    </ul>
+</div>
+
+
+<div id ="page-wraper">
+  <header>
+    <div class="container">
+      <div class="menu-toggle">
+        <button class="menu-toggle-button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="header-content">
+        <div class="logo">
+          <h1>Verti</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a class="active" href="#">Welcome</a>
+            </li>
+            <li>
+              <a href="#">Dropdown</a>
+            </li>
+            <li>
+              <a href="#">Left Sidebar</a>
+            </li>
+            <li>
+              <a href="#">Right Sidebar</a>
+            </li>
+            <li>
+              <a href="#">No Sidebar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="box with-padding">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="info-text">
+              <h2>Hi. This is Verti.</h2>
+              <p class='info-paragraph'>It's free responsive site template by HTML5 UP</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="info-buttons">
+              <button class="button-primary button-big button-icon-right"><i
+                  class="fa fa-arrow-circle-right"></i><span>Ok let's go</span></button>
+              <button class="button button-big button-icon-right"><i class="fa fa-question-circle"></i><span>More
+                  info</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <ul class="row">
+        <li class="col-md-4">
+          <article class="box">
+            <img src="assets/pic01.jpg" alt="green paint" />
+            <div class="box-content">
+              <header>
+                <h3>Lorem ipsum</h3>
+              </header>
+              <p className='article-subtitle'>
+                Lorem ipsum dolor sit amet
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet veniam quasi inventore omnis
+                odit, tempore eos laudantium atque explicabo! Amet quisquam exercitationem, aperiam nesciunt ullam dicta
+                nemo ex reiciendis.
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="col-md-4">
+          <article class="box">
+            <img src="assets/pic02.jpg" alt="blue paint" />
+            <div class="box-content">
+              <header>
+                <h3>Lorem ipsum</h3>
+              </header>
+              <p className='article-subtitle'>
+                Lorem ipsum dolor sit amet
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet veniam quasi inventore omnis
+                odit, tempore eos laudantium atque explicabo! Amet quisquam exercitationem, aperiam nesciunt ullam dicta
+                nemo ex reiciendis.
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="col-md-4">
+          <article class="box">
+            <img src="assets/pic03.jpg" alt="orange paint" />
+            <div class="box-content">
+              <header>
+                <h3>Lorem ipsum</h3>
+              </header>
+              <p className='article-subtitle'>
+                Lorem ipsum dolor sit amet
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet veniam quasi inventore omnis
+                odit, tempore eos laudantium atque explicabo! Amet quisquam exercitationem, aperiam nesciunt ullam dicta
+                nemo ex reiciendis.
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="box third-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 order-mobile-0">
+          <h3>Interesting stuff</h3>
+      <div class="row">
+        <div class="col-6">
+              <img class="gallery-item" src="assets/pic04.jpg" />
+            </div>
+            <div class="col-6">
+              <img class="gallery-item" src="assets/pic05.jpg" />
+            </div>
+       </div>
+       <div class="row">
+        <div class="col-6">
+              <img class="gallery-item" src="assets/pic06.jpg" />
+            </div>
+              <div class="col-6">
+              <img class="gallery-item" src="assets/pic07.jpg" />
+            </div>
+      </div>
+          <button class="button-primary">
+            <i class="fa fa-file-text-o"></i>
+            <span>More</span>
+          </button>
+        </div>
+        <div class="col-md-8 order-mobile-1">
+            <div class="about">
+            <h2>So what's this all about?</h2>
+            <p>Lorem ipsum dolor <a href="#">sit amet</a> consectetur adipisicing elit. Fuga perferendis enim atque est,
+              consequatur
+              mollitia temporibus neque quaerat aspernatur illo iste impedit laborum corporis nobis ipsum cupiditate
+              sequi
+              ut dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perferendis enim atque est, consequatur
+              mollitia temporibus neque quaerat <a href="#">aspernatur</a> illo iste impedit laborum corporis nobis
+              ipsum
+              cupiditate sequi
+              ut dolor.</p>
+            <button class="button-primary">
+              <i class="fa fa-arrow-circle-right"></i>
+              <span>Continue reading</span>
+            </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+<footer class="container">
+    <div class="row">
+      <div class="col-sm-6">
+      <div class="footer-staff">
+        <h3>Random stuff</h3>
+        <p><a href="#">Etiam feugiat condimentum</a></p>
+        <p><a href="#">Aliquam imperdiet suscipit odio</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+        <p><a href="#">Felis varius pellentesque potenti</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="footer-staff">
+        <h3>Random stuff</h3>
+        <p><a href="#">Etiam feugiat condimentum</a></p>
+        <p><a href="#">Aliquam imperdiet suscipit odio</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+        <p><a href="#">Felis varius pellentesque potenti</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+      <div class="footer-staff">
+        <h3>Random stuff</h3>
+        <p><a href="#">Etiam feugiat condimentum</a></p>
+        <p><a href="#">Aliquam imperdiet suscipit odio</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+        <p><a href="#">Felis varius pellentesque potenti</a></p>
+        <p><a href="#">Sed porttitor cras in erat nec</a></p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="footer-staff">
+        <h3>Contact Us</h3>
+        <div class="icon">
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-dribbble"></i>
+        <i class="fa fa-pinterest"></i>
+      </div>
+        <address>
+          1234 Fictional Road<br>
+          Nashville, NT 00000<br>
+          (800) 555-0000<br>
+        </address>
+      </div>
+    </div>
+    </div>
+  </footer>
+</div>  <!--div id ="page-wraper"-->
+</div> <!--div id ="flex"-->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

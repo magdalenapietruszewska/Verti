@@ -1,0 +1,55 @@
+footer.container  {
+  padding: $main-padding*2 $main-padding;
+  width: 100%;
+}
+
+.footer-staff {
+  border-bottom: 1px solid rgba($color-text, 0.5);
+  padding: $main-padding*2 0;
+  h3 {
+    margin-bottom: $main-padding*2;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    a {
+      &:visited {
+        color: $color-text;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  i {
+    background-color: $color-text ;
+    color: $color-background;
+    width: 37px;
+    height: 37px;
+    border-radius: $border-radius;
+    text-align: center;
+    line-height: 37px;
+    font-size: 2rem;
+    margin-right: $main-padding* 0.5;
+  }
+  address {
+    margin: $main-padding*2 0;
+    line-height: 2;
+  }
+}
+
+@include tablet {
+  .footer-staff {
+    border-bottom: none;
+  }
+}
+
+@include desktop {
+  footer{
+    display: flex;
+    border-bottom: none;
+    .row {
+      width: 100%;
+    }
+  }
+}

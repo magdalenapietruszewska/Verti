@@ -1,0 +1,126 @@
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $main-padding*2 0;
+}
+
+.logo {
+    background: $color-logo;
+    color: #fff;
+    padding: $main-padding;
+    font-size: 2rem;
+    font-family: 'Oleo Script', serif;
+    border-radius: $border-radius;
+}
+
+.menu-toggle {
+    padding: $main-padding/2 0;
+
+    .menu-toggle-button {
+        border: none;
+        border-radius: $border-radius;
+        background: rgba($color-text, 0.5);
+        color: #fff;
+        padding: $main-padding/2 $main-padding;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba($color-text, 0.75);
+        }
+    }
+}
+
+nav {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+#navPanel {
+    padding: 0 20px;
+    flex: 0 0 275px;
+    border-radius: 0px;
+    border-right: 3px solid rgba($color-text, 0.3);
+
+    li {
+        border-bottom: 0.3px solid rgba($color-text, 0.3);
+        &:first-child {
+            border-top: 0.3px solid rgba($color-text, 0.3);
+        }
+    }
+
+    a {
+        color: $color-text;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+    .list, .smallList {
+        font-weight: 100;
+        margin-left: 10px;
+    }
+
+    .smallList {
+        padding-left: 20px;
+    }
+}
+
+
+@include desktop {
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+
+    nav {
+        display: block;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            padding: $main-padding;
+        }
+
+        a {
+            padding: $main-padding;
+            border-radius: $border-radius;
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: 700;
+
+            &:link,
+            &:visited {
+                color: $color-text;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: $color-text;
+            }
+
+            &.active,
+            &:active {
+                color: #fff;
+                background-color: $color-text;
+            }
+        }
+    }
+}

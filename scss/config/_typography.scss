@@ -1,0 +1,43 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $color-text;
+}
+
+a {
+
+    &:link,
+    &:visited {
+        color: $color-primary;
+    }
+
+    &:hover {
+        color: lighten($color-primary, 10%);
+    }
+
+    &:active {
+        color: $color-primary;
+    }
+}
+
+p {
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: $main-padding;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: $main-padding*2;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: $main-padding*1.5;
+}
