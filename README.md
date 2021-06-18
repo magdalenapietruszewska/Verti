@@ -1,7 +1,7 @@
 # Verti - RWD - LANDING PAGE:
 
 ## About Project 
-Simply RWD landing page.
+Simple RWD landing page.
 
 ## Technologies
 Project is created with:
